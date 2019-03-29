@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>reservation-Form:-</title>
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Style -->
+    <link href="assets/css/all.css" rel="stylesheet">
+    <!-- Screen | responsive -->
+    <link href="assets/css/screens.css" rel="stylesheet">
+    <!-- Animate -->
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-light-dark custom-navbar">
+        <div class="container-fluid px-3 px-lg-5 pt-lg-4">
+            <a href="#" class="navbar-brand p-0 wow fadeIn" data-wow-duration="3s" data-wow-delay=".4s">
+                <figure class="mb-0">
+                    <img src="assets/images/logo.png" class="img-fluid" alt="footer-logo">
+                </figure>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse wow fadeIn" data-wow-duration="3s" data-wow-delay=".4s" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">plan a party
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Corporate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Catering</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Faqs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item" id="cd-cart-trigger">
+                        <a class="nav-link cd-img-replace" href="#0">Cart</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Reservation -->
+    <div class="container-fluid px-lg-5 Reservation">
+        <div class="row">
+            <header class="col-md-12 col-lg-12 col-xl-12 wow fadeIn" data-wow-duration="3s" data-wow-delay=".4s">
+                <h3>Personal Information</h3>
+                <h6>CREATE A LOGIN</h6>
+                <p>I already have a login.</p>
+            </header>
+            <!-- Login -->
+            <form class="col-md-12 col-lg-6 col-xl-6 wow fadeIn" data-wow-duration="3s" data-wow-delay=".4s">
+                <div class="form-group">
+                    <label for="exampleInputEmail1" class="sr-only">Enter Your Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1" class="sr-only">Choose a Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Choose a Password">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword2" class="sr-only">Reenter Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Reenter Password">
+                </div>
+            </form>
+            <!-- Line Horizental -->
+            <hr class="w-98 clearfix" />
+            <!-- Register -->
+            <form class="col-md-12 col-lg-6 col-xl-6 wow fadeIn" data-wow-duration="3s" data-wow-delay=".4s">
+                <!-- first name -->
+                <div class="form-group">
+                    <label for="first" class="sr-only">first name</label>
+                    <input type="text" class="form-control" id="first" placeholder="first name">
+                </div>
+                <!-- last Name -->
+                <div class="form-group">
+                    <label for="last" class="sr-only">last name</label>
+                    <input type="text" class="form-control" id="last" placeholder="last name">
+                </div>
+                <!-- billing address line 1 -->
+                <div class="form-group">
+                    <label for="billing-1" class="sr-only">billing address line 1</label>
+                    <input type="text" class="form-control" id="billing-1" placeholder="billing address line 1">
+                </div>
+                <!-- billing address line 2 -->
+                <div class="form-group">
+                    <label for="billing-2" class="sr-only">billing address line 2</label>
+                    <input type="text" class="form-control" id="billing-2" placeholder="billing address line 2">
+                </div>
+                <!-- phone -->
+                <div class="form-group">
+                    <label for="phone" class="sr-only">phone</label>
+                    <input type="text" class="form-control" id="phone" placeholder="phone">
+                </div>
+                <p>
+                    Please note: we will call you within 30-60 minutes to confirm your order
+                    <br> and collect credit card information.
+                </p>
+                <!-- email -->
+                <div class="form-group">
+                    <label for="R-Email" class="sr-only">Email</label>
+                    <input type="email" class="form-control" id="R-Email" placeholder="Email">
+                </div>
+                <!-- Same as Billing -->
+                <div class="form-group">
+                    <div class="reserved p-default">
+                        <input type="checkbox" />
+                        <div class="state p-primary">
+                            <label>Same as Billing</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- delivery adress line 1 -->
+                <div class="form-group">
+                    <label for="d-line-1" class="sr-only">delivery adress line 1</label>
+                    <input type="text" class="form-control" id="d-line-1" placeholder="delivery adress line 1">
+                </div>
+                <!-- delivery adress line 2 -->
+                <div class="form-group">
+                    <label for="d-line-2" class="sr-only">delivery adress line 2</label>
+                    <input type="text" class="form-control" id="d-line-2" placeholder="delivery adress line 2">
+                </div>
+            </form>
+            <!-- Line -->
+            <hr class="w-98 clearfix" />
+            <div class="col-md-12 col-lg-10 col-xl-10 wow fadeIn" data-wow-duration="3s" data-wow-delay=".4s">
+                <!-- party date -->
+                <header>
+                    <h1 class="py-lg-3">Party Information</h1>
+                    <h5>PARTY DATE</h5>
+                </header>
+                <!-- /header -->
+                <div class="row">
+                    <div class="col-md-4 col-lg-4 col-xl-6">
+                        <div class="form-group custom-dropdown">
+                            <label for="exampleFormControlSelect1" class="sr-only">Example select</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>MONTH</option>
+                                <option>January</option>
+                                <option>February</option>
+                                <option>March</option>
+                                <option>April</option>
+                                <option>May</option>
+                                <option>June</option>
+                                <option>July</option>
+                                <option>August</option>
+                                <option>September</option>
+                                <option>October</option>
+                                <option>November</option>
+                                <option>December</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-xl-2">
+                        <div class="form-group custom-dropdown">
+                            <label for="exampleFormControlSelect1" class="sr-only">Example select</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>DAY</option>
+                                <option>Monday</option>
+                                <option>Tuesday</option>
+                                <option>Wednesday</option>
+                                <option>Thursday</option>
+                                <option>Friday</option>
+                                <option>Saturday</option>
+                                <option>Sunday</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-xl-2">
+                        <div class="form-group custom-dropdown">
+                            <label for="exampleFormControlSelect1" class="sr-only">Example select</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>YEAR</option>
+                                <option>2015</option>
+                                <option>2016</option>
+                                <option>2017</option>
+                                <option>2018</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- guest arrival-->
+                <header>
+                    <h5>GUEST ARRIVAL</h5>
+                </header>
+                <!-- /header -->
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-xl-6">
+                        <div class="form-group custom-dropdown">
+                            <label for="exampleFormControlSelect1" class="sr-only">Example select</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>12:00</option>
+                                <option>13:00</option>
+                                <option>14:00</option>
+                                <option>15:00</option>
+                                <option>16:00</option>
+                                <option>17:00</option>
+                                <option>18:00</option>
+                                <option>19:00</option>
+                                <option>20:00</option>
+                                <option>21:00</option>
+                                <option>22:00</option>
+                                <option>23:00</option>
+                                <option>24:00</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-xl-2">
+                        <div class="form-group custom-dropdown">
+                            <label for="exampleFormControlSelect1" class="sr-only">Example select</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>PM</option>
+                                <option>AM</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- preferred delivery -->
+                <header>
+                    <h5>PREFERRED DELIVERY</h5>
+                </header>
+                <div class="row">
+                    <div class="col-md-4 col-lg-4 col-xl-6">
+                        <div class="form-group custom-dropdown">
+                            <label for="exampleFormControlSelect1" class="sr-only">Example select</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>MONTH</option>
+                                <option>January</option>
+                                <option>February</option>
+                                <option>March</option>
+                                <option>April</option>
+                                <option>May</option>
+                                <option>June</option>
+                                <option>July</option>
+                                <option>August</option>
+                                <option>September</option>
+                                <option>October</option>
+                                <option>November</option>
+                                <option>December</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-xl-2">
+                        <div class="form-group custom-dropdown">
+                            <label for="exampleFormControlSelect1" class="sr-only">Example select</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>DAY</option>
+                                <option>Monday</option>
+                                <option>Tuesday</option>
+                                <option>Wednesday</option>
+                                <option>Thursday</option>
+                                <option>Friday</option>
+                                <option>Saturday</option>
+                                <option>Sunday</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-xl-2">
+                        <div class="form-group custom-dropdown">
+                            <label for="exampleFormControlSelect1" class="sr-only">Example select</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>YEAR</option>
+                                <option>2015</option>
+                                <option>2016</option>
+                                <option>2017</option>
+                                <option>2018</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-xl-6">
+                        <div class="form-group custom-dropdown">
+                            <label for="exampleFormControlSelect1" class="sr-only">Example select</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>12:00</option>
+                                <option>13:00</option>
+                                <option>14:00</option>
+                                <option>15:00</option>
+                                <option>16:00</option>
+                                <option>17:00</option>
+                                <option>18:00</option>
+                                <option>19:00</option>
+                                <option>20:00</option>
+                                <option>21:00</option>
+                                <option>22:00</option>
+                                <option>23:00</option>
+                                <option>24:00</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-xl-2">
+                        <div class="form-group custom-dropdown">
+                            <label for="exampleFormControlSelect1" class="sr-only">Example select</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>PM</option>
+                                <option>AM</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- CheckBoxex -->
+                <div class="col-md-12 col-lg-10 col-xl-6">
+                    <div class="row text-left">
+                        <header class="p-2 w-100">
+                            <h5>ONE LAST TIME, ANY ALLERGIES?</h5>
+                        </header>
+
+                        <div class="col-md-6 col-lg-6 col-xl-4">
+                            <label class="label-container">Dairy
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-4">
+                            <label class="label-container">Gluten
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-4">
+                            <label class="label-container">Vegetarian
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <div class="col-md-6 col-lg-6 col-xl-4">
+                            <label class="label-container">Soy
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-4">
+                            <label class="label-container">Peanuts
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-4">
+                            <label class="label-container">Egg
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="row text-left">
+                        <header class="p-2 w-100">
+                            <h5>HOW DID YOU HERE ABOUT US?</h5>
+                        </header>
+                        <div class="col-md-6 col-lg-6 col-xl-4">
+                            <label class="label-container">Friend
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-4">
+                            <label class="label-container">At DPD Party
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-4">
+                            <label class="label-container">Ad
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-4">
+                            <label class="label-container">Blog/News
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-4">
+                            <label class="label-container">Internet Search
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-4">
+                            <label class="label-container">Other
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Comments/Question -->
+            <form class="col-md-12 col-lg-7 col-xl-7 wow fadeIn" data-wow-duration="3s" data-wow-delay=".4s">
+                <header class=" py-md-3 pt-lg-5 pb-lg-2">
+                    <h5>COMMENTS/QUESTIONS</h5>
+                </header>
+                <!-- /header -->
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1" class="sr-only">Example textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="YOUR ANSWER" rows="5"></textarea>
+                </div>
+            </form>
+            <!-- Line -->
+            <hr class="w-98 clearfix" />
+            <form class="col-md-12 col-lg-6 col-xl-6 wow fadeIn" data-wow-duration="3s" data-wow-delay=".4s">
+                <div class="reserved reserved-sm p-default">
+                    <input type="checkbox" />
+                    <div class="cstm state p-primary">
+                        <label>Please add me to your email list. I would like to get updates on the
+                            <br> latest DPD products, events, inspiration and advice</label>
+                    </div>
+                </div>
+                <div class="pt-3 wow fadeIn" data-wow-duration="2s" data-wow-delay=".7s">
+                    <button type="button" class="btn btn-more rounded-0 w-100">COMPETE CHECKOUT</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer wow fadeIn" data-wow-duration="2.5s" data-wow-delay=".4s">
+        <div class="container-fluid px-lg-5">
+            <div class="row">
+                <div class="col-md-2 col-lg-2 col-xl-2  text-center text-md-left">
+                    <figure>
+                        <img src="assets/images/logo.png" class="img-fluid" alt="footer-logo">
+                    </figure>
+                    <ul class="foo-list pt-lg-5 pb-lg-3">
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-facebook circle" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-instagram circle" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-lg-4 col-xl-4 pr-lg-6rem text-center text-md-left">
+                    <div class="footer-items">
+                        <div class="h-line w-25">
+                            <hr>
+                        </div>
+                        <h5>JOIN </h5>
+                        <p>Enter your email and recieve
+                            <br /> 20% off your first order.</p>
+                    </div>
+                    <form class="Newsletter">
+                        <div class="row no-gutters">
+                            <div class="col-12 col-md-10">
+                                <input type="email" class="form-control form-control-lg" placeholder="ENTER YOUR EMAIL">
+                            </div>
+                            <div class="col-12 col-md-2 text-center fa-fl fa-sm">
+                                <a href="#">
+                                    <i class="fa-2x fa fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-3 text-center text-md-left">
+                    <div class="footer-items">
+                        <div class="h-line w-25">
+                            <hr>
+                        </div>
+                        <h5>CALL</h5>
+                        <p>Give us a shout. We’d love
+                            <br /> to engage in some good old fashioned conversation.</p>
+                        <h5 class="pt-lg-3">(646) 831-1345</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-3 text-center text-md-left">
+                    <div class="footer-items">
+                        <div class="h-line w-25">
+                            <hr>
+                        </div>
+                        <h5>EMAIL</h5>
+                        <p>Drop us a line anytime and
+                            <br /> we’ll get back to you within 24
+                            <br />hours.
+                        </p>
+                        <h5 class="pt-lg-3">Contact</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row footer-bottom pl-lg-3 text-center text-md-left">
+                <div class="col-md-12">
+                   <p class="text-muted">&copy; 2017 Dinner Party Delivered. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JavaScript -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custome.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+</body>
+
+</html>

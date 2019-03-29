@@ -1,0 +1,216 @@
+$colors:(white: #fff,
+black: #000,
+);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name)
+}
+
+$desktop:1025px;
+$mobile: 767px;
+
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+}
+@mixin desktop{
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+@mixin social-icon{
+        width: 48px;
+        height: 48px;
+        background-size: 100% 100%;
+        transition: .8s
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#wrapper {
+    background-image: url(../images/DPD_Splash_Bkgd_Image.jpg);
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.over-lay {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+}
+
+header {
+    nav{
+        padding: 0 30px !important;
+    }
+    .logo {
+        width: 105px;
+    }
+
+    li {
+        display: inline-block;
+        margin: 0 5px;
+    }
+
+    a {
+        display: block;
+    }
+    .facebook {
+        background:url(../images/facebook.png) no-repeat;
+        @include social-icon;
+    }
+
+    .facebook:hover {
+        background: url(../images/facebook-hover.png) no-repeat;
+        @include social-icon;
+    }
+
+    .instagram {
+        background: url(../images/instagram.png) no-repeat;
+        @include social-icon;
+    }
+
+    .instagram:hover {
+        background: url(../images/instagram-hover.png) no-repeat;
+        @include social-icon;
+    }
+
+    .pintrest {
+        background: url(../images/pintrest.png) no-repeat;
+        @include social-icon;
+    }
+
+    .pintrest:hover {
+        background: url(../images/pintrest-hover.png) no-repeat;
+        @include social-icon;
+    }
+
+    .yelp {
+        background: url(../images/yelp.png) no-repeat;
+        @include social-icon;
+    }
+
+    .yelp:hover {
+        background: url(../images/yelp-hover.png) no-repeat;
+        @include social-icon;
+    }
+}
+
+main {
+    height: 72%;
+    .outer {
+        display: table;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+
+    .middle {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .banner {
+        h1 {
+            position: relative;
+            font-size: 40px;
+            color: color(white);
+            text-align: center;
+            font-family: 'EB Garamond', serif;
+            line-height: 1;
+            padding: 0 0 30px;
+            margin: 0 auto 30px;
+            @include desktop{
+                width: 650px;
+            }
+            @include mobile{
+                font-size: 24px;
+            }
+        }
+
+        h1:before {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            content: '';
+            width: 200px;
+            height: 2px;
+            background: color(white);
+        }
+
+        span {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            text-align: center;
+            font-size: 14px;
+            color: color(white);
+            display: block;
+            margin: 0 0 50px;
+        }
+        form{
+            padding: 0 !important;
+        }
+        input[type=email] {
+            background: transparent;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            color: color(white);
+            border-radius: 0;
+            padding: 20px
+        }
+
+        input::placeholder {
+            color: color(white);
+        }
+
+        .input-group-addon {
+            background-color: color(white);
+            padding: 9px 20px;
+            color: color(black);
+            border: 0;
+            background-image: url(../images/Arrow.png);
+            background-repeat: no-repeat;
+            width: 24px;
+            height: 42px;
+            background-size: 30% 50%;
+            background-position: 50%;
+            cursor: pointer;
+        }
+    }
+}
+
+footer {
+    text-align: center;
+    color: color(white);
+    span {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+
+        a {
+            color: color(white);
+            text-decoration: none;
+            &:hover {
+                color: color(white);
+                text-decoration: none;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12px;
+    }
+}

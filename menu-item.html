@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>menu-item:-</title>
+        <!-- Bootstrap -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Style -->
+        <link href="assets/css/all.css" rel="stylesheet">
+        <!-- Animate -->
+        <link href="assets/css/animate.css" rel="stylesheet">
+        <!-- screens |Responsive -->
+        <link href="assets/css/screens.css" rel="stylesheet">
+        <!-- Fonts -->
+        <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg bg-white custom-navbar">
+            <div class="container-fluid px-3 px-lg-5 pt-lg-4">
+                <a href="#" class="navbar-brand p-0 wow fadeIn" data-wow-duration="3s" data-wow-delay=".4s">
+                    <figure class="mb-0">
+                        <img src="assets/images/logo.png" class="img-fluid" alt="footer-logo">
+                    </figure>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse wow fadeIn" data-wow-duration="3s" data-wow-delay=".4s" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">plan a party
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Corporate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Catering</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Faqs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item" id="cd-cart-trigger">
+                            <a class="nav-link cd-img-replace" href="#0">Cart</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Accordion -->
+        <div class="container-fluid px-lg-0">
+            <div class="row">
+                <div class="col-lg-9 px-lg-0 cpb-lg-8 border-right border-bottom">
+                    <div id="accordion" class="Dpd-accordion">
+                        <!-- PARTY PLAN FILTERS -->
+                        <div class="card plan-filters wow fadeIn" data-wow-duration="3s" data-wow-delay=".4s">
+                            <div class="card-header" id="headingone">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseone" aria-expanded="false" aria-controls="collapseone">
+                                        <i class="fa" aria-hidden="true"></i>
+                                        <strong>PARTY PLAN FILTERS</strong>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseone" class="collapse" aria-labelledby="headingone" data-parent="#accordion">
+                                <div class="card-body text-center">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-10">
+                                            <h4>What type of party will you have?</h4>
+                                            <div class="custom-tab my-lg-5">
+                                                <button class="tablinks" onclick="openCity(event, 'Special-Occasion')">Everyday / Special Occasion</button>
+                                                <button class="tablinks border-lr-2px" onclick="openCity(event, 'Seasonal-Holiday')">Seasonal / Holiday</button>
+                                                <button class="tablinks" onclick="openCity(event, 'Cocktail-Party')">Cocktail Party</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="Special-Occasion" class="tabcontent">
+                                        <div class="row justify-content-center">
+                                            <div class="col-md-8">
+                                                <header class="py-3 py-lg-5">
+                                                    <h3>Everyday / Special Occasion</h3>
+                                                    <p>London is the capital city of England.</p>
+                                                    <form class="flex py-lg-3">
+                                                        <input type="button" onclick="decrementValue()" value="-" />
+                                                        <input type="text" id="number" value="6" />
+                                                        <input type="button" onclick="incrementValue()" value="+" />
+                                                    </form>
+                                                    <p class="text-muted">
+                                                        Minimum 6 People Required
+                                                    </p>
+                                                </header>
+                                                <h4 class="py-lg-3">Any allergies in your partywe should know about?</h4>
+                                                <div class="row text-left pl-lg-5">
+                                                    <div class="col-md-4">
+                                                        <label class="label-container">Dairy
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label class="label-container">Gluten
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label class="label-container">Vegetarian
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label class="label-container">Soy
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label class="label-container">Peanuts
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label class="label-container">Egg
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="Seasonal-Holiday" class="tabcontent">
+                                        <div class="row justify-content-center">
+                                            <div class="col-md-8">
+                                                <header class="py-3 py-lg-5">
+                                                    <h2>Seasonal / Holiday</h2>
+                                                    <p>Paris is the capital of France.</p>
+                                                </header>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="Cocktail-Party" class="tabcontent">
+                                        <div class="row justify-content-center">
+                                            <div class="col-md-8">
+                                                <header class="py-3 py-lg-5">
+                                                    <h3>How many people are in your party?</h3>
+                                                    <form class="flex py-lg-3">
+                                                        <input type="button" onclick="decrementValue()" value="-" />
+                                                        <input type="text" id="number" value="16" />
+                                                        <input type="button" onclick="incrementValue()" value="+" />
+                                                    </form>
+                                                    <p class="text-muted">
+                                                        Minimum 6 People Required
+                                                    </p>
+                                                </header>
+                                                <div class="row text-left">
+                                                    <h4 class="py-lg-3">Any allergies in your partywe should know about?</h4>
+                                                    <div class="col-md-4">
+                                                        <label class="label-container">Dairy
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label class="label-container">Gluten
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label class="label-container">Vegetarian
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label class="label-container">Soy
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label class="label-container">Peanuts
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label class="label-container">Egg
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing row justify-content-center align-items-center mlr-cstm-3 card-body">
+                            <div class="col-md-4">
+                                <header class="text-center">
+                                    <h2 class="card-price font-weight-light display-4">$50</h2>
+                                    <h4 class="period display-5">per person</h4>
+                                </header>
+                            </div>
+                            <div class="col-md-8 border-left-black">
+                                <div class="pl-lg-5">
+                                    <h5 class="font-weight-light pt-lg-3">Includes 2 hors d’oeuvres, 1 first course, 1 main course, 2 side dishes and 1 dessert</h5>
+                                    <p class="text-muted py-lg-3 lead">Additional dishes and dishes with select ingredients may include a surcharge</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-md-11">
+                                <h5>Select Dishes from the items below to build your menu.</h5>
+                            </div>
+                        </div>
+                        <!-- Hors d’oeuvres (Select 2) -->
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <i class="fa" aria-hidden="true"></i>
+                                        <strong>Hors d’oeuvres (Select 2)</strong>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div class="row px-lg-5">
+                                    <div class="col-md-6 py-lg-3">
+                                        
+                                            <div class="card-deck h-100">
+                                                <div class="card">
+                                                    <div class="card-header mih-265 bg-black position-relative">
+                                                    </div>
+                                                    <div class="player">
+                                                        <a href="#" data-toggle="modal" data-target="#f-details">
+                                                            <img src="assets/images/play_03.png" alt="play" class="img-fluid">
+                                                        </a>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <div class="card-title border-bottom-black mih-100">
+                                                            <h6>MEDITERRANEAN EMPANADAS</h6>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between">
+                                                            <div class="flex-basis-5">
+                                                                <p>
+                                                                    <strong>Allergans: gluten, egg, Vegetarian</strong>
+                                                                </p>
+                                                            </div>
+                                                            <div class="flex-right">
+                                                                <p>
+                                                                    Full Details
+                                                                </p>
+
+                                                                <a href="#">
+                                                                    <i class="fa fa-plus" aria-hidden="true"></i>&nbsp; Add to Cart
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                         
+                                    </div>
+                                    <div class="col-md-6 py-lg-3">
+                                        <div class="card-deck h-100">
+                                            <div class="card">
+                                                <div class="card-header mih-265 bg-black position-relative">
+                                                </div>
+                                                <div class="player">
+                                                    <a href="#" data-toggle="modal" data-target="#f-details">
+                                                        <img src="assets/images/play_03.png" alt="play" class="img-fluid">
+                                                    </a>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="card-title border-bottom-black mih-100">
+                                                        <h6>TUSCAN WHITE BEAN & ROSEMARY DIP WITH CRUDITE </h6>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="flex-basis-5">
+                                                            <p>
+                                                                <strong>Allergans: Vegan</strong>
+                                                            </p>
+                                                        </div>
+                                                        <div class="flex-right">
+                                                            <p>
+                                                                Full Details
+                                                            </p>
+                                                            <a href="#">
+                                                                <i class="fa fa-plus" aria-hidden="true"></i>&nbsp; Add to Cart
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 py-lg-3">
+                                        <div class="card-deck h-100">
+                                            <div class="card">
+                                                <div class="card-header mih-265 bg-black position-relative">
+                                                </div>
+                                                <div class="player">
+                                                    <a href="#" data-toggle="modal" data-target="#f-details">
+                                                        <img src="assets/images/play_03.png" alt="play" class="img-fluid">
+                                                    </a>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="card-title border-bottom-black mih-100">
+                                                        <h6>FIG & OLIVE TAPENADE </h6>
+                                                        <span class="text-muted">
+                                                            with Walnuts and Crostini
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="flex-basis-5">
+                                                            <p>
+                                                                <strong>Allergans: dairy, nuts, gluten, Vegetarian </strong>
+                                                            </p>
+                                                        </div>
+                                                        <div class="flex-right">
+                                                            <p>
+                                                                Full Details
+                                                            </p>
+
+                                                            <a href="#">
+                                                                <i class="fa fa-plus" aria-hidden="true"></i>&nbsp; Add to Cart
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 py-lg-3">
+                                        <div class="card-deck h-100">
+                                            <div class="card">
+                                                <div class="card-header mih-265 bg-black position-relative">
+                                                </div>
+                                                <div class="player">
+                                                    <a href="#" data-toggle="modal" data-target="#f-details">
+                                                        <img src="assets/images/play_03.png" alt="play" class="img-fluid">
+                                                    </a>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="card-title border-bottom-black mih-100">
+                                                        <h6>EGGPLANT ROLL-UPS </h6>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="flex-basis-5">
+                                                            <p>
+                                                                <strong>Allergans: Dairy, Vegetarian
+                                                                </strong>
+                                                            </p>
+                                                        </div>
+                                                        <div class="flex-right">
+                                                            <p>
+                                                                Full Details
+                                                            </p>
+
+                                                            <a href="#">
+                                                                <i class="fa fa-plus" aria-hidden="true"></i>&nbsp;Add to Cart
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 py-lg-3">
+                                        <div class="card-deck h-100">
+                                            <div class="card">
+                                                <div class="card-header mih-265 bg-black position-relative">
+                                                </div>
+                                                <div class="player">
+                                                    <a href="#" data-toggle="modal" data-target="#f-details">
+                                                        <img src="assets/images/play_03.png" alt="play" class="img-fluid">
+                                                    </a>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="card-title border-bottom-black mih-100">
+                                                        <h6>POLENTA WITH GOAT CHEESE,ROASTED TOMATO & FRIED BASIL</h6>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="flex-basis-5">
+                                                            <p>
+                                                                <strong>Allergans: dairy, GlutenFree, Vegetarian
+                                                                </strong>
+                                                            </p>
+                                                        </div>
+                                                        <div class="flex-right">
+                                                            <p>
+                                                                Full Details
+                                                            </p>
+
+                                                            <a href="#">
+                                                                <i class="fa fa-plus" aria-hidden="true"></i>&nbsp; Add to Cart
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- First Course (Select 1) -->
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <i class="fa" aria-hidden="true"></i>
+                                        <strong>First Course (Select 1)</strong>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                <!-- <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                                    3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                    shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                                    labore sustainable VHS.
+                                </div> -->
+                            </div>
+                        </div>
+                        <!-- Main Course (Select 1) -->
+                        <div class="card">
+                            <div class="card-header" id="headingfour">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                                        <i class="fa" aria-hidden="true"></i>
+                                        <strong>Main Course (Select 1)</strong>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapsefour" class="collapse" aria-labelledby="headingfour" data-parent="#accordion">
+                                <!-- <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                                    3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                    shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                                    labore sustainable VHS.
+                                </div> -->
+                            </div>
+                        </div>
+                        <!-- Side Dishes (Select 2) -->
+                        <div class="card">
+                            <div class="card-header" id="headingfive">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                                        <i class="fa" aria-hidden="true"></i>
+                                        <strong>Side Dishes (Select 2)</strong>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapsefive" class="collapse" aria-labelledby="headingfive" data-parent="#accordion">
+                                <!-- <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                                    3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                    shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                                    labore sustainable VHS.
+                                </div> -->
+                            </div>
+                        </div>
+                        <!-- Dessert (Select 1) -->
+                        <div class="card">
+                            <div class="card-header" id="headingsix">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
+                                        <i class="fa" aria-hidden="true"></i>
+                                        <strong>Dessert (Select 1)</strong>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapsesix" class="collapse" aria-labelledby="headingsix" data-parent="#accordion">
+                                <!-- <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                                    3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                    shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                                    labore sustainable VHS.
+                                </div> -->
+                            </div>
+                        </div>
+                        <!-- Add-Ons (Optional) -->
+                        <div class="card">
+                            <div class="card-header" id="headingseven">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseseven" aria-expanded="false" aria-controls="collapseseven">
+                                        <i class="fa" aria-hidden="true"></i>
+                                        <strong>Add-Ons (Optional)</strong>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseseven" class="collapse" aria-labelledby="headingseven" data-parent="#accordion">
+                                <!-- <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                                    3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                    shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                                    labore sustainable VHS.
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 px-lg-0 d-none d-lg-block d-xl-block">
+                    <div id="cd-cart">
+                        <h2>Your Order</h2>
+                        <div class="d-flex justify-content-between c-settings">
+                            <!-- items -->
+                            <div class="flex-item">
+                                <h5>Meat Item 1</h5>
+                                <span class="badge badge-light p-lg-2">24</span>
+                                <strong class="item-price-calc">Items x $1</strong>
+                                <i class="fa-1x fa fa-minus-square-o fa-custom" aria-hidden="true"></i>
+                            </div>
+                            <div class="flex-item">
+                                <p class="item-final-price">$24.00</p>
+                            </div>
+                        </div>
+                        <!-- items -->
+                        <div class="d-flex justify-content-between c-settings">
+                            <div class="flex-item">
+                                <h5>Meat Item 4</h5>
+                                <span class="badge badge-light p-lg-2">36</span>
+                                <strong class="item-price-calc">Items x $2</strong>
+                                <i class="fa-1x fa fa-minus-square-o fa-custom" aria-hidden="true"></i>
+                            </div>
+                            <div class="flex-item">
+                                <p class="item-final-price">$48.00</p>
+                            </div>
+                        </div>
+                        <!-- items -->
+                        <div class="d-flex justify-content-between c-settings">
+                            <div class="flex-item">
+                                <h5>The Sunset Park Cocktail
+                                </h5>
+                                <span class="badge badge-light p-lg-2">16</span>
+                                <strong class="item-price-calc">People x $3</strong>
+                                <i class="fa-1x fa fa-minus-square-o fa-custom" aria-hidden="true"></i>
+                            </div>
+                            <div class="flex-item">
+                                <p class="item-final-price">$48.00</p>
+                            </div>
+                        </div>
+                        <!-- Total -->
+                        <div class="final-recipt py-lg-3">
+                            <div class="d-flex justify-content-lg-around">
+                                <div class="flex-item">
+                                    <h5>Items Subtotal</h5>
+                                </div>
+                                <div class="flex-item">
+                                    <p class="item-final-price m-0">$300.00</p>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-lg-around">
+                                <div class="flex-item">
+                                    <h5>Sales Tax</h5>
+                                </div>
+                                <div class="flex-item">
+                                    <p class="item-final-price m-0">$00.00</p>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-lg-around">
+                                <div class="flex-item">
+                                    <h5>
+                                        <strong>Total</strong>
+                                    </h5>
+                                </div>
+                                <div class="flex-item">
+                                    <p class="item-final-price m-0">$323.63</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- CheckOut -->
+                        <div class="pt-3 text-center">
+                            <button type="button" class="btn btn-more rounded-0" data-toggle="modal" data-target="#proceed-checkout">CHECKOUT</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Models -->
+
+        <!-- full details-->
+        <div class="modal fade" id="f-details">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content rounded-0">
+                    <!-- top-iframe -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/uNCr7NdOJgw?rel=0&amp;amp;showinfo=0&amp;autoplay=0&amp;loop=0" width="1280" height="720" frameborder="0" allowfullscreen=""></iframe>
+                    </div>
+                    <!-- Modal Header -->
+                    <div class="modal-header modal-close">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="container-fluid menu-item-wrap">
+                            <div class="row">
+                                <h5>ENTRÉE</h5>
+                                <ul class="pb-lg-2">
+                                    <li>
+                                        <cite>Your Main Course</cite>
+                                    </li>
+                                </ul>
+
+                                <div class="col-md-12">
+                                    <h2>MEDITERRANEAN KEBABS</h2>
+                                </div>
+                                <div class="col-md-6 col-lg-6">
+                                    <h5>INCLUDED IN YOUR BOX</h5>
+                                    <ol type="1">
+                                        <li>large pans of raw marinated kebabs</li>
+                                        <li>bottle of herb marinade for the seafood kebabs</li>
+                                        <li>container of tzatziki</li>
+                                        <li> piece of parchment paper</li>
+                                    </ol>
+                                    <!-- === -->
+                                    <h5>INGREDIENTS</h5>
+                                    <p>Lamb and Chicken Kebab Ingredients: onion, parsley, tomatillos, jalapeno, lemon, canola oil, garlic, salt</p>
+                                    <p>Shrimp and Swordfish Kebab Ingredients: onion, harissa, canola oil, lemon, salt</p>
+                                    <p>Tzatziki Ingredients: Greek yogurt, cucumber, lemon, dill, garlic, salt, pepper</p>
+                                    <h5>ALLERGENS</h5>
+                                    <p>None</p>
+                                </div>
+                                <div class="col-md-6 col-lg-6">
+                                    <h5>INSTRUCTIONS</h5>
+                                    <p>Pour the herb marinade over the swordfish and shrimp kebabs at maximum 30 minutes before cooking. Preheat your oven to 375 degrees. Place all kebabs on a baking sheet lined with parchment paper. Remove shrimp after 5 minutes. Remove swordfish and lamb after 8 minutes. Remove chicken after 12 minutes or until cooked completely through. Serve tzatziki alongside the kebabs. Enjoy! </p>
+                                </div>
+                            </div>
+                            <!-- Proceed-checkout -->
+                            <div class="row menu-btn-wrap">
+                                <div class="col-md-12">
+                                    <button type="button" class="btn btn-more rounded-0" data-toggle="modal" data-target="#f-details"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;ADD TO CART</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Proceed Product-->
+        <div class="modal fade" id="proceed-checkout">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content rounded-0">
+                    <!-- Modal Header -->
+                    <div class="modal-header modal-close">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body text-center text-lg-left">
+                        <div class="container-fluid k-Equipment-wrap">
+                            <header>
+                                <h5>Kitchen Equipment & Serving Dishes Needed for Your Party</h5>
+                            </header>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <figure>
+                                        <img src="assets/images/Oven.png" alt="Oven" class="img-fluid">
+                                        <figcaption>Oven</figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-md-4">
+                                    <figure>
+                                        <img src="assets/images/Whisk.png" alt="Whisk" class="img-fluid">
+                                        <figcaption>Whisk</figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-md-4">
+                                    <figure>
+                                        <img src="assets/images/Spatula.png" alt="Spatula" class="img-fluid">
+                                        <figcaption>Spatula</figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-md-4">
+                                    <figure>
+                                        <img src="assets/images/Cutting-Board.png" alt="Cutting Board" class="img-fluid">
+                                        <figcaption>Cutting Board</figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-md-4">
+                                    <figure>
+                                        <img src="assets/images/Spatula.png" alt="Knife" class="img-fluid">
+                                        <figcaption>Knife</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="row py-lg-3">
+                                <div class="col-md-12">
+                                    <h5>
+                                        <strong>MISSING SERVING DISHES?</strong><span class="lead">&nbsp;Select a serving dish item below and we will provide one of ours at the<br>
+                                            additional cost listed.</span>
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <figure>
+                                        <img src="assets/images/Large-Bowl.png" alt="Large-Bowl" class="img-fluid">
+                                        <figcaption>Large Bowl</figcaption>
+                                    </figure>
+                                    <div class="equipment-cart">
+                                        <div class="h-line w-100">
+                                            <hr>
+                                        </div>
+                                        <h5><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;$5</h5>
+                                        <a href="#"><i class=" fa fa-plus" aria-hidden="true"></i>&nbsp;Add to Cart</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <figure>
+                                        <img src="assets/images/Serving-Tray.png" alt="Serving-try" class="img-fluid">
+                                        <figcaption>Serving tray</figcaption>
+                                    </figure>
+                                    <div class="equipment-cart">
+                                        <div class="h-line w-100">
+                                            <hr>
+                                        </div>
+                                        <h5><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;$5</h5>
+                                        <a href="#"><i class=" fa fa-plus" aria-hidden="true"></i>&nbsp;Add to Cart</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <figure>
+                                        <img src="assets/images/Small-Bowl.png" alt="Small-Bowl" class="img-fluid">
+                                        <figcaption>Small Bowl</figcaption>
+                                    </figure>
+                                    <div class="equipment-cart">
+                                        <div class="h-line w-100">
+                                            <hr>
+                                        </div>
+                                        <h5><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;$3</h5>
+                                        <a href="#"><i class=" fa fa-plus" aria-hidden="true"></i>&nbsp;Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Proceed-checkout -->
+                            <div class="row proceed-btn-wrap">
+                                <div class="col-md-12">
+                                    <button type="button" class="btn btn-more rounded-0" data-toggle="modal" data-target="#proceed-checkout">PROCEED TO CHECKOUT</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="footer wow fadeIn" data-wow-duration="2.5s" data-wow-delay=".4s">
+            <div class="container-fluid px-lg-5">
+                <div class="row">
+                    <div class="col-md-2 col-lg-2 col-xl-2  text-center text-md-left">
+                        <figure>
+                            <img src="assets/images/logo.png" class="img-fluid" alt="footer-logo">
+                        </figure>
+                        <ul class="foo-list pt-lg-5 pb-lg-3">
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-facebook circle" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-instagram circle" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-xl-4 pr-lg-6rem text-center text-md-left">
+                        <div class="footer-items">
+                            <div class="h-line w-25">
+                                <hr>
+                            </div>
+                            <h5>JOIN </h5>
+                            <p>Enter your email and recieve
+                                <br /> 20% off your first order.</p>
+                        </div>
+                        <form class="Newsletter">
+                            <div class="row no-gutters">
+                                <div class="col-12 col-md-10">
+                                    <input type="email" class="form-control form-control-lg" placeholder="ENTER YOUR EMAIL">
+                                </div>
+                                <div class="col-12 col-md-2 text-center fa-fl fa-sm">
+                                    <a href="#">
+                                        <i class="fa-2x fa fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-xl-3 text-center text-md-left">
+                        <div class="footer-items">
+                            <div class="h-line w-25">
+                                <hr>
+                            </div>
+                            <h5>CALL</h5>
+                            <p>Give us a shout. We’d love
+                                <br /> to engage in some good old fashioned conversation.</p>
+                            <h5 class="pt-lg-3">(646) 831-1345</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-xl-3 text-center text-md-left">
+                        <div class="footer-items">
+                            <div class="h-line w-25">
+                                <hr>
+                            </div>
+                            <h5>EMAIL</h5>
+                            <p>Drop us a line anytime and
+                                <br /> we’ll get back to you within 24
+                                <br />hours.
+                            </p>
+                            <h5 class="pt-lg-3">Contact</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row footer-bottom pl-lg-3 text-center text-md-left">
+                    <div class="col-md-12">
+                        <p class="text-muted">&copy; 2017 Dinner Party Delivered. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JavaScript -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/custome.js"></script>
+        <script src="assets/js/wow.js"></script>
+        <script>
+                                                            new WOW().init();
+        </script>
+    </body>
+
+</html>

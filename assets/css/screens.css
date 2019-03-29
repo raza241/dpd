@@ -1,0 +1,233 @@
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    /*======================
+              Gloabl
+	====================== */
+
+    /* ==== Line ==== */
+    .h-line {
+        margin: 0 auto;
+    }
+    /* ==== spacing ==== */
+    .py-sm-1rem {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .plr-cstm,
+    .plr-2-8,
+    .menu-item-wrap{
+    	padding: 1rem;
+    }
+    .mlr-cstm-3{margin:3rem 0;}
+    /* === display === */
+    
+    /* === Borders ===*/
+    .border-left-black{
+    	border-left: 1px solid transparent !important;
+    }
+    /* icons */
+    .fa-sm {
+        padding: 1em;
+    }
+    /* === navbar === */
+    .custom-navbar .container-fluid {
+        align-items: center;
+    }
+    .navbar-toggler-icon {
+        font-size: 10vw;
+    }
+    .custom-navbar ul.navbar-nav li a {
+        font-size: 4vw;
+        text-align: center;
+        background: rgba(255, 255, 255, .5);
+    }
+     /* ===================
+        Markup
+    ====================== */
+
+    /* ======== P:home ========= */
+    /* === showcase === */
+    .showcase .showcase-text ul.no_bullet li.arrow_circle {
+        font-size: 3.5vw;
+    }
+    /* ======== P:additional-items-checkout =========== */
+    .custom-tab button{
+    	height: 100px;
+    	zoom: 75%;
+    }
+    .pricing h5:first-of-type{
+    	font-size: 1.2rem;
+    	line-height: normal;
+    }
+    /* === Typography ===*/
+    h1{font-size: calc(1.4em + 1vmin);}
+    h2{font-size: calc(1.3em + 1vmin)!important;}
+    h3{font-size: calc(1.2em + 1vmin);}
+    h3{font-size: calc(1.1em + 1vmin);}
+    h4{font-size: calc(1em + 1vmin);}
+    h5{font-size: calc(.9em + 1vmin);}
+
+    /* ========= menu Items ===========*/
+    .modal{padding-right:0px !important;}
+    .modal-xl {
+          max-width: 100%;
+    }
+
+}
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    /*======================
+              Gloabl
+	====================== */
+    /* ==== Line ==== */
+    .h-line {
+        margin: 0 auto;
+    }
+
+    /* ==== spacing ==== */
+    .plr-2-8 {
+        padding: 2rem;
+    }
+    /* === Borders ===*/
+    .border-left-black{
+    	border-left: 1px solid transparent !important;
+    }
+    /* === navbar === */
+    .custom-navbar .container-fluid {
+        align-items: center;
+    }
+    .navbar-toggler-icon {
+        font-size: 8vw;
+    }
+    .custom-navbar ul.navbar-nav li a {
+        font-size: 2vw;
+        text-align: center;
+        background: rgba(255, 255, 255, .5);
+    }
+
+     /* ===================
+        Markup
+    ====================== */
+
+    /* ======== P:additional-items-checkout =========== */
+    .custom-tab button{
+    	height: 100px;
+    }
+    .pricing h5:first-of-type{
+        font-size: 1.2rem;
+        line-height: normal;
+    }
+}
+
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /*======================
+              Gloabl
+	====================== */
+
+	/* ==== spacing ==== */
+	.plr-2-8 {
+        padding: 2rem;
+    }
+    /* === navbar === */
+    .custom-navbar .container-fluid {
+        align-items: center;
+    }
+    .navbar-toggler-icon {
+        font-size: 6vw;
+    }
+    .custom-navbar ul.navbar-nav li a {
+        font-size: 2.5vw;
+        text-align: center;
+        background: rgba(255, 255, 255, .5);
+    }
+
+    /* ====spacing==== */
+    #cd-cart {
+        width: 100%;
+    }
+
+     /* ===================
+        Markup
+    ====================== */
+
+     /* ======== P:additional-items-checkout =========== */
+    .custom-tab button{
+        height: 80px;
+    }
+    .pricing h5:first-of-type{
+        font-size: 1.2rem;
+        line-height: normal;
+    }
+}
+
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    /*======================
+              Gloabl
+	====================== */
+
+
+
+    /* ===================
+        Markup
+    ====================== */
+    /* ======== P:additional-items-checkout =========== */
+    .custom-tab button{
+        height: 80px;
+    }
+    .pricing h5:first-of-type{
+        font-size: 1.30rem;
+        line-height: normal;
+    }
+}
+
+
+/* Hp */
+@media only screen and (min-width: 1022px) and (max-width: 1368px) {
+    #cd-cart{right:0%;opacity: 0;}
+    #cd-cart.speed-in{
+        opacity: 1;
+       -webkit-transition: opacity 2s ease-in;
+    -moz-transition: opacity 2s ease-in;
+    -o-transition: opacity 2s ease-in;
+    -ms-transition: opacity 2s ease-in;
+    transition: opacity 2s ease-in;
+    }
+}
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    /*======================
+              Gloabl
+	====================== */
+
+    /* ====spacing==== */
+    .pr-lg-6rem {
+        padding-right: 6rem;
+    }
+    .py-lg-5rem {
+        padding: 5rem 0;
+    }
+
+    #cd-cart>* {
+        padding: 0;
+    }
+}
